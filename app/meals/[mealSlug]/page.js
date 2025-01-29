@@ -11,7 +11,7 @@ export default function MealDetailsPage({ params }) {
           <Image src={meal.image} alt={meal.title} fill />
         </div>
         <div className={classes.headerText}>
-          <h1>meal.title</h1>
+          <h1>{meal.title}</h1>
           <p className={classes.creator}>
             {" "}
             by <a href={`mailto:${meal.creator_email}`}>{meal.creator}</a>
